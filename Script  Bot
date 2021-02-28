@@ -1,0 +1,28 @@
+const Discord = require("discord.js")
+
+module.exports.run = async(bot, message, args) => {
+
+    let afk = message.mentions.members.first();
+    if (!afk) {
+
+        let aEmbed = new Discord.MessageEmbed()
+            .setColor("#00f00")
+            .setDescription(`${message.author} AFK "fait dodo" 💨`)
+
+        message.channel.send(aEmbed)
+
+    } else {
+
+        let aEmbed = new Discord.MessageEmbed()
+            .setColor("#00f00")
+            .setDescription(`${message.author} AFK "fait dodo" 💨`)
+
+        message.channel.send(aEmbed)
+
+
+    }
+
+}
+module.exports.help = {
+    name: "afk"
+}
